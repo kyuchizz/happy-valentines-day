@@ -1,0 +1,40 @@
+body{
+  font-family: 'Dancing Script', cursive;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  display:flex;
+  flex-direction:column;
+  min-height:60vh;
+  align-items:center;
+}
+.site-header{width:100%; background:transparent; padding:20px 10px; display:flex; justify-content:center}
+.main-nav a{margin:0 10px; text-decoration:none; color:var(--muted)}
+.main-nav a:hover{color:var(--accent)}
+.hero{
+  max-width:var(--max-width);
+  width:100%;
+  font-family: 'Dancing Script', cursive;
+  padding:40px 20px;
+  text-align:center;
+}
+.hero h2{font-size:2.2rem; margin:0 0 10px}
+.hero .intro{color:var(--muted); margin-bottom:10px}
+.btn{
+  background:var(--accent); color:white; padding:12px 20px; border-radius:999px; text-decoration:none; display:inline-block;
+}
+.site-footer{
+  margin-top:auto; 
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  padding:-150px; 
+  color:var(--muted)
+}
+.hero2{
+  max-width:var(--max-width);
+  font-family: 'Dancing Script', cursive;
+  width:70%;
+  padding:10px 120px;
+  text-align:center;
+}
+.hero2 h5{font-size:50px; margin:0 0 10px}

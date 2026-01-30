@@ -1,0 +1,288 @@
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/iconn.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Parisienne&family=Sacramento&family=Clicker+Script&display=swap" rel="stylesheet">
+  <title>mwahhh!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<html lang="en">
+<body>
+  <img src="images/right.png" alt="stars" width="1024" height="auto" class="right">
+  <img src="images/doggs.gif" alt="decor" id="corner-png" class="dogs-run">
+  <img src="images/joe.gif" alt="stars" width="1024" height="auto" class="joeee">
+  <img src="images/left.png" alt="stars" width="1024" height="auto" class="left">
+</body>
+<style>
+  #corner-png {
+    position: fixed;
+    right: 12px; 
+    bottom: 12px;
+    width: 300px;
+    height: auto; 
+    z-index: 9999;
+    pointer-events: none;
+  }
+  .dogs-run {
+    width: 300px;
+    height: auto;
+    position: absolute; 
+    top: 90%;
+    left: 7%; 
+    transform: translate(-50%, 0);
+}
+ .right {
+    width: 1200px;
+    height: auto;
+    position: fixed; 
+    top: 0%;
+    left: 12%; 
+ }
+ .left {
+    width: 1200px;
+    height: auto;
+    position: fixed; 
+    top: 0%;
+    left: 0%; 
+ }
+.joeee {
+    width: 500px;
+    height: 150px;
+    position: absolute; 
+    top: 520%;
+    left: 32%; 
+    animation: fadeInScale 0.5s ease-out forwards;
+    opacity: 0;
+}
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9); 
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+
+  .letter-container {
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 28px 36px;
+    background: #ffffff;
+    color: #3d3d3d; 
+    font-family: 'Dancing Script', cursive;
+    font-size: 19px;
+    line-height: 1.5;
+    border-radius: 8px;
+    box-shadow: 0 9px 25px rgba(43, 38, 21, 0.06);
+    text-align: left; 
+  }
+
+.letter-container p {
+  margin: 0 0 16px;
+}
+
+.letter-sign {
+  margin-top: 22px;
+}
+
+/* Для мобильных экранов */
+@media (max-width: 720px) {
+  .letter-container {
+    margin: 20px;
+    padding: 20px;
+    font-size: 17px;
+  }
+}
+.btn-home:hover{ background:#cc5b7d; }
+  </style>
+<body>
+  <main class="hero">
+    <h2 style="color: #cc5b7d;">A little letter 4 u</h2>
+    <html lang="en">
+</body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&amp;display=swap" rel="stylesheet" />
+</head>
+  <style>
+    :root{
+      --bg: #ff9bbd;
+      --card: #fff;
+      --text: #3b3b46; 
+      --accent: #8b5e7a; 
+    }
+
+html,body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffe2ed;
+  font-family: 'Dancing Script', cursive;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding: 48px 24px;
+  box-sizing: border-box;
+}
+
+.letter {
+  width: 100%;
+  max-width: 680px; 
+  background: var(--card);
+  padding: 34px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(60,50,80,0.06);
+  line-height: 1.6;
+  font-size: 21px;
+  border: 1px solid rgba(100,90,110,0.06);
+  box-sizing: border-box;
+  text-align: left; 
+  animation: fadeInScale 0.8s ease-out forwards;
+  opacity: 0;
+}
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9); 
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+
+.letter p {
+  margin: 0 0 16px 0;
+  white-space: pre-wrap; 
+}
+
+.salutation {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 19px;
+}
+
+.signature {
+  margin-top: 22px;
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 18px;
+}
+
+@media (max-width: 520px) {
+  .letter {
+    padding: 22px;
+    font-size: 20px;
+  }
+}
+ .btn-home{
+  display:inline-block;
+  padding:10px 16px;
+  background:#ff7aa2;
+  color:#fff;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:14px;
+  font-family: 'Dancing Script', cursive;
+  animation: fadeInScale 0.5s ease-out forwards;
+  opacity: 0;;
+}
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9); 
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+
+.btn-home:hover{ background:#cc5b7d; }
+  </style>
+<body>
+ <button id="to-home" 
+    class="btn-home" 
+    onclick="location.href='index.html'">Backk</button>
+  <img src="images/pusheen.png" alt="decor" id="corner-png" class="pusheen">
+</body>
+<style>
+  #corner-png {
+    position: fixed;
+    right: 12px; 
+    bottom: 12px;
+    width: 167px;
+    height: auto; 
+    z-index: 9999;
+    pointer-events: none;
+  }
+  .pusheen {
+    width: 167px;
+    height: auto;
+    position: absolute; 
+    top: 70%;
+    left: 92%; 
+    transform: translate(-50%, 0);
+    animation: float 1s ease-in-out infinite; 
+}
+@keyframes float {
+    0% {
+        transform: translate(-50%, 0px) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -20px) scale(1.05); 
+    }
+    100% {
+        transform: translate(-50%, 0px) scale(1);
+    }
+}
+
+p {
+    margin-top: 200px; 
+    line-height: 1.6;
+}
+</style>
+<body>
+  <div class="page">
+    <article class="letter" role="article" aria-label="Letter">
+      <p class="salutation">Hihihi my dear beau!!!</p>
+<p>𝄂𝄚𝅦𝄚𝄞 Im sorry i did so little, but i really tried and i hope this little gift made you smile!</p>
+<p>Honestly, i have so many thoughts and i want to tell them all in this little letter. Soo!! Today is really a special day; and i want to spend this valentine's day with youu! I feel so honoured and happy to be your valentine</p>
+<p>First, i want to thank you for what we have now. I enjoy spending time with you, im grateful for our little talks, long and short calls, and when we play together!!</p>
+<p>Thank you for your laughs and giggles, for your voice and for your sweet words, for your support and your trust. You give me the safe space i needed for a long time.</p>
+<p>Whenever we're talking or just sleeping on a call, i think about how dear u are to me, how glad i am that i met u and that you feel like home to me.</p>
+<p>I have a feeling that i knew you as long as i can remember, and im so happy to be a part of your life. I feel that im falling in love with you more every day.</p>
+<p>You are the most sincere, kind and funny guy i've ever met. i'd give everything just to hear you more and be able to hold your hand, to be in your arms, and just fall asleep while listening to your soothing voice.</p>
+<p>What i love about you isnt just one certain thing, but a breathtaking combination: your kind heart, your adorable sense of humor that makes me smile and giggle no matter what, and how incredibly supportive you are!</p>
+<p>You literally make me want to be a better person and im changing for the best just because of you.</p>
+<p>𝄂𝄚𝅦𝄚𝄞 Im in love with your eyes! They're so beautiful blue like the most breathtaking and the most pure lake I've ever got to see
+I want to see them closer, want to see every line and dot of the iris of your eyes, because they look like a new planet for me - filled with quiet calmness, but no less tender and timid in moments of emotion.</p>
+<p>I want to hold your hands, feel the texture of your skin on my skin, just close my eyes and touch your arms and wrists so softly, so carefully just to feel your pulse, trace my fingers over your cheeks and finally realise that you're real, that you're right here, that im yours and you're mine!!</p>
+<p>I want to feel what do you smell like, want to forget myself in your embrace, hide my face in your hair and your neck just so i can remember your smell all my life and in fact i remember smells really good.</p>
+<p>When we're talking, when i get to see you on pictures or when we're having video calls i feel you - you're warm, like a little sparkling sunny with its light pulsing under your skin!</p>
+<p>And i know that you're the person i want to rely on, to trust you when i become vulnerable or weak or when my soul just wants to hide in someone's arms and never come out.</p>
+<p>Everything you say, everything you do and even the way you look at me through my phone screen makes my heart do professional parkour and flips as if its going insane in my chest.. Im not sure what gonna happen when i meet you irl - either its gonna explode or just stop from beating so fast.</p>
+<p>I feel proud for you whenever you do something during the day or even when you do nothing - im still proud, because you being you is already enough to be appreciated so much!
+When you learn russian and talk with me using your newfound knowledge all i want to do is listen to you do it more, in fact i want to listen to you always.</p>
+<p>Honestly I've never had this kind of love.. Ive never smiled so wide when thinking about someone while doing a damn biology test, never yapped to my friends that all they hear from me is "i love him so much do u understand hes so wonderful i love my boy" and never dreamed of seeing someone closer, and im ready for all clever traps of my mind when in a dream it shows you so close to me that I actually feel you near.</p>
+<p>𝄂𝄚𝅦𝄚𝄞 It was scaring me so much, ive been scared of loving and be loved and something in my life made me believe that im an unloveable, made me believe that im gonna spend my life alone with just ten cats and a tv, but now!!! Now i know that i want and i will do everything in my powers just to spend my whole life not just with ten cats but with you, i want to be your satellite and revolve in your orbit as saturn's rings revolve around it, embracing it!!</p>
+<p>I want us to be like pluto and charon - two dwarf planets forever locked in each other's gaze!</p>
+<p>To be the beam for your pulsar, be your bright signal! 
+I want us to be two satellites.. Whenever two satellites move in orbit, there always is a moment when they meet at one certain point, and i want to try to be that very satellite that will meet your satellite but never go past you!</p>
+<p>I want to be a tsunami for you but never a bad one - the one that will lift you up with its high waves and hold you, and want to be lifted on your waves as well.</p>
+<p>Im looking forward to every moment with you in the future. I can't wait to meet you and im ready to wait as long as it needs to finally see u with my own eyes.</p>
+<p>I love u so much and i love everything about uu! You live in my head and my heart and im so happy to be yours!</p>
+<p>XOXO, with all my love૮ ˶ᵔ ᵕ ᵔ˶ ა</p>
+  <class="signature"> — Sonya </class>
+  </div>
+</body>
+</html>  

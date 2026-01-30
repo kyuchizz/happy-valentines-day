@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/iconn.png">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Parisienne&family=Sacramento&family=Clicker+Script&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>4 mi baby!!</title>
+</head>
+  <style>
+  :root{
+    --bg: #fff9f7;
+    --card: #ffffff;
+    --accent: #ff7aa2;
+    --text: #333;
+    --muted: #666;
+    --radius: 12px;
+    --transition: 300ms cubic-bezier(.2,.9,.2,1);
+  }
+  body{
+    margin:0;
+    font-family: 'Dancing Script', cursive;
+    background: #ffefea;
+    color:var(--text);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px;
+  }
+
+  .container{
+    width:100%;
+    max-width:720px;
+    }
+
+  h1{
+    margin:0 0 18px 0;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+  }
+
+  .reason-card{
+    background:var(--card);
+    border-radius:var(--radius);
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+    padding:18px;
+    box-shadow: 0 6px 20px rgba(20,20,40,0.06);
+    margin-bottom:14px;
+    overflow:hidden;
+  }
+
+  .reason-top{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+
+  .num{
+    display:inline-grid;
+    place-items:center;
+    width:40px;
+    height:40px;
+    border-radius:10px;
+    background:linear-gradient(180deg,#ffdede,#ffb3b3);
+    color:#600;
+    font-weight:700;
+  }
+
+  .teaser-button{
+    background:transparent;
+    border:0;
+    padding:0;
+    font-size:2rem;
+    font-family: 'Dancing Script', cursive;
+    color:var(--accent);
+    cursor:pointer;
+    text-align:left;
+    flex:1;
+    font-weight:600;
+    outline: none;
+  }
+
+  .teaser-button:hover{ text-decoration: underline; }
+
+  .muted{
+    color:var(--muted);
+    font-size:0.92rem;
+    }
+
+  .reveal-wrap{
+    transition: max-height var(--transition), opacity var(--transition);
+    max-height:0;
+    opacity:0;
+    overflow:hidden;
+    margin-top:12px;
+  }
+
+  .reveal-wrap.open{
+    opacity:1;
+    max-height:400px;
+  }
+
+  .real-text{
+    background: linear-gradient(90deg, #fff9f9, #fff);
+    padding:12px;
+    border-radius:8px;
+    color: #111;
+    line-height:1.45;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.02);
+  }
+
+  .arrow{
+    margin-left:12px;
+    transition: transform var(--transition);
+    display:inline-block;
+    color:var(--muted);
+  }
+
+  .arrow.rotate{ transform: rotate(90deg); }
+
+    @media (max-width:420px){
+  .num{ width:36px; height:36px; font-size:0.95rem; }
+  }
+  .btn-home{
+    display:inline-block;
+    padding:10px 16px;
+    background:#ff7aa2;
+    color:#fff;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:20px;
+    font-family: 'Dancing Script', cursive;
+}
+  .btn-home:hover{ background:#cc5b7d; }
+</style>
+<body>
+   <img src="images/left2.png" alt="decor" class="note-list">
+   <img src="images/strawberry.gif" alt="stars" width="1024" height="auto" class="strawberry">
+   <img src="images/doggy.gif" alt="decor" id="corner-png" class="doggy">
+</body>
+<style>
+  #corner-png {
+    position: fixed;
+    right: 12px; 
+    bottom: 12px;
+    width: 167px;
+    height: auto; 
+    z-index: 9999;
+    pointer-events: none;
+  }
+  .doggy {
+    width: 167px;
+    height: auto;
+    position: absolute; 
+    top: 70%;
+    left: 13%; 
+    transform: translate(-50%, 0);
+    animation: float 1s ease-in-out infinite; 
+}
+  .note-list {
+    width: 300px;
+    height: auto;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+  .strawberry {
+    width: 300px;
+    height: 1620px;
+    position: absolute; 
+    top: 0%;
+    left: 75%; 
+}
+</style>
+  <div class="container">
+    <button id="to-home" 
+    class="btn-home" 
+    onclick="location.href='index.html'">Backk</button>
+    <h1>Reasons why ur the best boy in the world</h1>
+
+    <div class="reason-card">
+      <div class="reason-top">
+        <div class="num">1</div>
+
+        <button class="teaser-button" aria-expanded="false" aria-controls="real-1" data-target="real-1">
+        Your kindness ૮Ꮚ ´‌ ᵕ ‌ ꒱ა
+        </button>
+
+        <span class="arrow" aria-hidden="true">★</span>
+      </div>
+
+      <div id="real-1" class="reveal-wrap" aria-hidden="true">
+        <div class="real-text">
+          no one has ever treated me with such tenderness and kindness, it’s as if I see your soul and I want to hug it tightly, hold it close and never let go
+        </div>
+      </div>
+    </div>
+
+    <div class="reason-card">
+      <div class="reason-top">
+        <div class="num">2</div>
+        <button class="teaser-button" aria-expanded="false" aria-controls="real-2" data-target="real-2">
+          Your intelligence ꒰´ᗜ๑꒱ഒ  𝇋♡𝇌
+        </button>
+        <span class="arrow" aria-hidden="true">▶</span>
+      </div>
+      <div id="real-2" class="reveal-wrap" aria-hidden="true">
+        <div class="real-text">
+          you really are so smart, and it's always a pleasure for me to listen to everything you say, you are so passionate about what you do that u inspire me to do things id never do!! im fascinated by your love for literally EVERYTHING, the way you can make even boring stuff sound interesting 
+        </div>
+      </div>
+    </div>
+
+   <div class="reason-card">
+      <div class="reason-top">
+        <div class="num">3</div>
+        <button class="teaser-button" aria-expanded="false" aria-controls="real-3" data-target="real-3">
+          Your voice ⛥࣪  ૮ > .   ა ׅ 
+        </button>
+        <span class="arrow" aria-hidden="true">★</span>
+      </div>
+      <div id="real-3" class="reveal-wrap" aria-hidden="true">
+        <div class="real-text">
+          since the moment i heard it i began hearing it in my head when i feel sad or lonely, i love listening to you and i want your voice to be with me until the end
+        </div>
+      </div>
+    </div>
+
+   <div class="reason-card">
+      <div class="reason-top">
+        <div class="num">4</div>
+        <button class="teaser-button" aria-expanded="false" aria-controls="real-4" data-target="real-4">
+          Your humour  ೀ ֹ ࣪ 。𓆠 ۫ 
+        </button>
+        <span class="arrow" aria-hidden="true">▶</span>
+      </div>
+      <div id="real-4" class="reveal-wrap" aria-hidden="true">
+        <div class="real-text">
+          i love everything that comes to your mind, i love seeing and hearing you laugh and i absolutely adore even the most stupid jokes that u tell me because u always do everything better
+        </div>
+      </div>
+    </div>
+
+   <div class="reason-card">
+      <div class="reason-top">
+        <div class="num">5</div>
+        <button class="teaser-button" aria-expanded="false" aria-controls="real-5" data-target="real-5">
+          The way your head works ◟ ꒰  .⸝⸝.  ꒱ 
+        </button>
+        <span class="arrow" aria-hidden="true">★</span>
+      </div>
+      <div id="real-5" class="reveal-wrap" aria-hidden="true">
+        <div class="real-text">
+          im in awe of how quick u understand everything i say, and how easy u make me understand different stuff, you always listen and u know what to say when i feel down
+        </div>
+      </div>
+      </div>
+
+     <div class="reason-card">
+      <div class="reason-top">
+        <div class="num">6</div>
+        <button class="teaser-button" aria-expanded="false" aria-controls="real-6" data-target="real-6">
+          blebleblebleble
+        </button>
+        <span class="arrow" aria-hidden="true">▶</span>
+      </div>
+      <div id="real-6" class="reveal-wrap" aria-hidden="true">
+        <div class="real-text">
+          You listen without judgement and give the best advice. Your support makes difficult days easier and good days even better.
+         </div>
+      </div>
+    </div>
+
+     <div class="reason-card">
+      <div class="reason-top">
+        <div class="num">7</div>
+        <button class="teaser-button" aria-expanded="false" aria-controls="real-7" data-target="real-7">
+          blebleblebleble
+        </button>
+        <span class="arrow" aria-hidden="true">★</span>
+      </div>
+      <div id="real-7" class="reveal-wrap" aria-hidden="true">
+        <div class="real-text">
+          You listen without judgement and give the best advice. Your support makes difficult days easier and good days even better.
+        </div>
+      </div>
+    </div>
+
+    <div class="reason-card">
+      <div class="reason-top">
+        <div class="num">8</div>
+        <button class="teaser-button" aria-expanded="false" aria-controls="real-8" data-target="real-8">
+          blebleblebleble
+        </button>
+        <span class="arrow" aria-hidden="true">▶</span>
+      </div>
+      <div id="real-8" class="reveal-wrap" aria-hidden="true">
+        <div class="real-text">
+          You listen without judgement and give the best advice. Your support makes difficult days easier and good days even better.
+        </div>
+      </div>
+    </div>
+
+    <div class="reason-card">
+      <div class="reason-top">
+        <div class="num">9</div>
+        <button class="teaser-button" aria-expanded="false" aria-controls="real-9" data-target="real-9">
+          blebleblebleble
+        </button>
+        <span class="arrow" aria-hidden="true">★</span>
+      </div>
+      <div id="real-9" class="reveal-wrap" aria-hidden="true">
+        <div class="real-text">
+          You listen without judgement and give the best advice. Your support makes difficult days easier and good days even better.
+        </div>
+      </div>
+    </div>
+
+    <div class="reason-card">
+      <div class="reason-top">
+        <div class="num">10</div>
+        <button class="teaser-button" aria-expanded="false" aria-controls="real-10" data-target="real-10">
+          blebleblebleble
+        </button>
+        <span class="arrow" aria-hidden="true">▶</span>
+      </div>
+      <div id="real-10" class="reveal-wrap" aria-hidden="true">
+        <div class="real-text">
+          You listen without judgement and give the best advice. Your support makes difficult days easier and good days even better.
+        </div>
+      </div>
+    </div>
+  
+
+  <script>
+   
+    document.querySelectorAll('.teaser-button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        const wrap = document.getElementById(targetId);
+        const arrow = btn.parentElement.querySelector('.arrow');
+        
+        const isOpen = wrap.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+        wrap.setAttribute('aria-hidden', String(!isOpen));
+        
+        if (isOpen) arrow.classList.add('rotate'); else arrow.classList.remove('rotate');
+       
+        if (isOpen) {
+          setTimeout(() => {
+            wrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }, 120);
+        }
+      });
+    });
+
+  </script>
+</html>
